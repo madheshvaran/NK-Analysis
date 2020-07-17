@@ -3,6 +3,7 @@ library(reshape2)
 library(readr)
 
 receptor <- read.table("Raw Data/Correlation IL2RB Mature NK.txt", header = TRUE, sep = "\t")
+#Run this code for all other cytokine receptor files
 str(receptor)
 colnames(receptor)[colnames(receptor) == "target.gene"] <- "Gene"
 
